@@ -1,0 +1,33 @@
+* {
+	font-family: Arial, Verdana, sans-serif;
+	color: #665544;
+	text-align: center;
+}
+a {
+	color: black;
+}
+body {
+	width: 90%;
+	margin: 0 auto;
+}
+#content {
+	overflow: auto;
+}
+#nav, #prog, #math, #cs {
+	margin: 0.5%;
+}
+li {
+	display: inline;
+	padding: 0.5em;
+}
+#nav {
+	background-color: hotpink;
+	padding: 0.5em 0;
+}
+.article, #prog, #math, #cs {
+	
+	height: 10em;
+	margin-bottom: 1em;
+	background-color: #efefef;
+}
+
