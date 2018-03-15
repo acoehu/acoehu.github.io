@@ -7,15 +7,15 @@ a {
 	color: black;
 }
 body {
+	background-image:url("background.jpg");
 	width: 90%;
 	margin: 0 auto;
 }
-#content {
-	overflow: auto;
-}
+
 #nav, #intro{
 	margin: 2%;
 }
+
 li {
 	display: inline;
 	padding: 0.5em;
@@ -24,7 +24,7 @@ li {
 	background-color: hotpink;
 	padding: 0.5em 0;
 }
-#intro, .article {
+#intro {
 	height: 30em;
 	margin-bottom: 1em;
 	background-color: #efefef;

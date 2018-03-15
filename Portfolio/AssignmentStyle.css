@@ -9,6 +9,7 @@ a {
 body {
 	width: 90%;
 	margin: 0 auto;
+	background-image:url("background.jpg");
 }
 #content {
 	overflow: auto;
@@ -26,7 +27,7 @@ li {
 }
 .article, #assignment {
 	
-	height: 15em;
+	height: 27em;
 	margin-bottom: 1em;
 	background-color: #efefef;
 }

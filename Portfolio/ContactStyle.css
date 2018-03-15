@@ -1,6 +1,6 @@
 * {
 	font-family: Arial, Verdana, sans-serif;
-	color: #665544;
+	
 	text-align: center;
 }
 a {
@@ -9,9 +9,11 @@ a {
 body {
 	width: 90%;
 	margin: 0 auto;
+	background-image:url("background.jpg");
 }
 #content {
 	overflow: auto;
+	color: #665544;
 }
 #nav, #contact{
 	margin: 0.5%;
@@ -26,8 +28,14 @@ li {
 }
 .article, #contact {
 	
-	height: 15em;
+	height: 34em;
 	margin-bottom: 1em;
 	background-color: #efefef;
+}
+#errorMessages {
+	color:red;
+}
+#errorMessages {
+	color:red;
 }
 

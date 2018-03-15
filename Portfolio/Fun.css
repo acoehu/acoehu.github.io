@@ -1,6 +1,6 @@
 * {
 	font-family: Arial, Verdana, sans-serif;
-	color: #665544;
+	
 	text-align: center;
 }
 a {
@@ -13,8 +13,9 @@ body {
 }
 #content {
 	overflow: auto;
+	color: #665544;
 }
-#nav, #prog, #math, #cs {
+#nav, .box, #word{
 	margin: 0.5%;
 }
 li {
@@ -25,10 +26,17 @@ li {
 	background-color: hotpink;
 	padding: 0.5em 0;
 }
-.article, #prog, #math, #cs {
+.article, .box {
 	
-	height: 14em;
+	height: 25em;
 	margin-bottom: 1em;
 	background-color: #efefef;
 }
+#word {
+	
+	height: 8em;
+	margin-bottom: 1em;
+	background-color: #efefef;
+}
+
 

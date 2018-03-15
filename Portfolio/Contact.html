@@ -6,6 +6,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width" >
 		<link rel="stylesheet" type="text/css" href="ContactStyle.css">
+		<script src="Script.js"></script>
 	</head>
 	<body>
 		<div id="header">
@@ -22,19 +23,46 @@
 				</ul>
 			</div>
 		</div>
+
+
 		<div id="content">
 			<div id ="contact">
-				<h1>Contact infomation</h1>
-				<h3>Address: Bellevue, WA, USA</h3>
-				<h3>Phone:(+1) 425-240-8888</h3>
-				<h3>Email:phong.pham@bellevuecollege.edu</h3>
-				<h3>FAX: 88888888</h3>
+				
+				<h1>Contact Form</h1> 
+				<div id = "errorMessages" ></div>
+				<br>
+				<form action ="ThankYou.html" method="POST" name = "myContact" onsubmit = "return ValidateForm();">
+		<fieldset>
+			<legend>User Information</legend>
+			<label for="name">Enter name(Required) </label> <br>
+				<input type="text" id="name" maxlength="50"> <br> 
+			<label for="email">Enter Email(Required)</label> <br>
+				<input type="text" id="email"> <br> 
+			<label for="commentbox">Enter message(Required)</label> <br>
+			<textarea name="commentbox" id="commentbox" rows="15" cols="100" maxlength = "200"></textarea>
+		</fieldset>
+		
+		<br> <input id="submit" type="submit" value="Submit"> 
+		
+	</form>
 				
 			</div>
-			<img src ="http://valueinvestingjourney.com/wp-content/uploads/2017/05/contact-me-button.png" alt ="goodstuff" height = 280>
+			
 			
 			
 		</div>
-		
+		<footer>
+		<br> <a href="https://jigsaw.w3.org/css-validator/check/referer">
+			<img style="border: 0; width: 88px; height: 31px"
+			src="https://jigsaw.w3.org/css-validator/images/vcss"
+			alt="Valid CSS!" />
+		</a> <a href="https://jigsaw.w3.org/css-validator/check/referer"> <img
+			style="border: 0; width: 88px; height: 31px"
+			src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+			alt="Valid CSS!" />
+		</a>
+		<p id="time"></p>
+		<script>document.getElementById("time").innerHTML = Date();</script>
+		</footer>
 	</body>
 </html>
