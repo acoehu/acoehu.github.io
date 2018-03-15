@@ -4,11 +4,16 @@ function ValidateForm() {
 		var errorMessages = ""; 
 		var valid = true;
 
-		var name = myContact.name.value;
+		var first = myContact.first.value;
+		var last = myContact.last.value;
 		var email = myContact.email.value;
 		var text = myContact.commentbox.value;
-		if ((Empty(name)) || !checkLetter(name)) {
-			errorMessages += "<b>Name is required and only accept letters.</b><br>";
+		if ((Empty(first)) || !checkLetter(first)) {
+			errorMessages += "<b>First name is required and only accept letters.</b><br>";
+			valid = false;
+		}
+		if ((Empty(last)) || !checkLetter(last)) {
+			errorMessages += "<b>Last name is required and only accept letters.</b><br>";
 			valid = false;
 		}
 		if ((Empty(email)) || (!validateEmail(email))) {
